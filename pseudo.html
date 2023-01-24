@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo page for elements</title>
+    <style>
+        h2::first-letter{
+            color: red;
+            font-variant: ;
+            font-style: italic;
+            font-size: 50px;
+        }
+        p::first-line{
+            color: blueviolet;
+            font-variant: small-caps;
+        }
+        ::selection{
+            color: red;
+            background: bisque;
+        }
+        h3::before{
+            content:url(smiley.gif);
+        }
+        h3::after{
+            content:url(smiley.gif);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hi i am saifuddin</h2>
+    <p>Recent research has provided a wealth of insight about how dogs came to be domesticated by humans 
+        and the roles they played in Native American culture. DNA studies on archaeological finds suggest 
+        that dogs may have been domesticated by humans as long as 40,000 years ago. When the first humans 
+        came to North America from Eurasia, at least 12,000 years ago, domesticated dogs came with them. 
+        They appear to have been highly prized by early North American hunter-gatherers and were their only 
+        animal companions for centuries, since there were no horses on the continent until the 16th century.
+    </p>
+    <h3>To add the image</h3>
+    <img src="img_forest.jpg" alt="Forest" width="170" height="100">
+    <img src="img_mountains.jpg" alt="Mountains" width="170" height="100">
+
+</body>
+</html>

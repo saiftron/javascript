@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation page</title>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        background-color: #f1f1f1;
+        margin: 0px;
+        padding: 0px;
+        width: 25%;
+        height: 1000px;
+        overflow: auto;
+        position: fixed;
+        border-radius: 5px;
+        
+    }
+     li a{
+        text-decoration: none;
+        display: block;
+        padding: 8px 16px;
+        color: black;
+    }
+    li a:hover:not(.one){
+        background-color: #555;
+        color: white;
+    }
+    .one{
+        background-color:green;
+
+    }
+</style>
+<body>
+    <ul>
+        <li><a href="#home" class="one">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#report">Report</a></li>
+        <li><a href="#about">About</a></li>
+
+    </ul>
+    <div style="margin-left: 25%; padding: 1px 16px; height: 1000px;">
+    <p>When it comes to maintaining a reader’s attention, a good rule of thumb might be
+         to avoid writing more than five or six sentences in a paragraph before finding a
+          logical place to break. That said, remember that the idea behind a paragraph might 
+          be short and sweet, or it might merit deeper explanation. There are no strict rules 
+          about how many words or lines your paragraphs should be, and there’s no need to lock 
+          your doors if you occasionally write long or short ones. The grammar police aren’t coming for you.</p>
+</div>
+</body>
+</html>

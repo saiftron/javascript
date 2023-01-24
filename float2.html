@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div.one{
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            margin-top: 20px;
+        }
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one" style="background-color: aqua;">
+        <p>some text in here to write</p>
+        </div>
+        <div class="one" style="background-color:aquamarine">
+        <p>some text in here to write </p>
+         </div>
+        <div class="one" style="background-color: bisque;">
+        <p>some text to write</p>
+         </div>
+    </div>
+    <p><strong>NOTE:</strong>It is easy to use float and simple </p>
+</body>
+</html>
