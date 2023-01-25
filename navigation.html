@@ -33,13 +33,35 @@
         background-color:green;
 
     }
+    li a :hover, .dropc:hover .dropb{
+        background-color: red;
+    }
+    li .dropc{
+        display: inline-block;
+    }
+    data{
+        text-align: left;
+        display: none;
+        position: absolute;
+    }
+    .dropc:hover .data{
+        display: block;
+    }
 </style>
 <body>
     <ul>
         <li><a href="#home" class="one">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#report">Report</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="dropc">
+            <a href="javascript void(0)" class="dropb">Dropdown</a>
+            <div class="data">
+                <a href="#">LINK 1</a>
+                <a href="#">LINK 2</a>
+                <a href="#">LINK 3</a>
+            </div>
+
+        </li>
 
     </ul>
     <div style="margin-left: 25%; padding: 1px 16px; height: 1000px;">

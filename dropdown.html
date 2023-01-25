@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown page</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+        li a {
+            text-decoration: none;
+            padding: 14px 16px;
+            color: black;
+            display: block;
+            text-align: center;
+        }
+        li{
+            float: left;
+
+        }
+        a:hover{
+            background-color: azure;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+        .data{
+            position: absolute;
+            display: none;
+            min-width: 160px;
+            background-color: #f9f9f9;
+            padding: 12px 16px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.2);
+        }
+        .dropdown:hover .data {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home" class="one">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#tutorials">Tutorials</a></li> 
+    </ul>
+    <div class="dropdown">
+        <span>Hover over me</span>
+        <div class="data">
+            <p>Why did you Hover bastard</p>
+        </div>
+    </div>
+</body>
+</html>

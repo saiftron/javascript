@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown2 page</title>
+    <style>
+        .dropb{
+            background-color: green;
+            padding: 16px;
+            border:none;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropc{
+            position: absolute;
+            display: NONE;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0,  0, 0.2);
+            z-index: 1;
+
+        }
+        .dropc a{
+            text-decoration: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown:hover .dropb{
+            background-color: #3e8e41;
+        }
+        .dropdown:hover .dropc{
+            display: block;
+        }
+        .dropc a:hover {
+          background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dropdown button</h2>
+    <div class="dropdown">
+        <button class="dropb">Dropdown</button>
+        <div class="dropc">
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 2</a>
+            <a href="#">LINK 3</a>
+            <a href="#">LINK 4</a>
+
+        </div>
+    </div>
+</body>
+</html>
