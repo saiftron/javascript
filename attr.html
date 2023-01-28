@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px blac;
+        }
+        input[type=text]{
+            width: 20%;
+            background-color: lightslategray;
+            display: block;
+            margin-bottom: 10px;
+
+        }
+        input[type=button]{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-left: 8px;
+        }
+        .one:hover{
+            background-color: red;
+        }
+        input[type=text]:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        FirstName: <input type="text" name="FirstName" id="fname" placeholder="Firstname" size="20">
+        LastName: <input type="text" name="LastNAme" id="laname" placeholder="Lastname" size="20">
+        <input type="button" value="submit" class="one">
+    </form>
+</body>
+</html>
